@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="css/ToDo-list.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+         
+        
+          <div class="wrapper bg-info">
+                <div class="header text-center">
+                <h1>WORK TO-DOS</h1>
+                <p class="p1">Enter text into the input field to add items to your list (max.28 characters).</p>
+                <p class="p2">Click the item to mark it as compelete.</p>
+                <p class="p3 pb-1">click the "X" to remove the item from your list.</p>
+            </div>
+                
+
+            
+            <div class="inputfield ">
+                <input class="form-control form-control-lg  mr-1"  type="text" placeholder="New item..."/>
+                <button class="btn1"><i class="fas fa-plus pb-2"></i></button>
+            </div>
+            <ul class="todoList  pt-4 ">
+                
+                <!-- Data comes from local storage -->
+                
+            </ul>
+            <div class="footer">
+                <span class="pt-1">you have <span class="pendingNumber"></span> pending tasks</span>
+                <button class="btn2">Clear all</button>
+            </div>
+        </div>
+
+
+       
+        <script src="js/ToDo-list.js"></script>
+    </body>
+</html>
